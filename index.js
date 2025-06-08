@@ -28,12 +28,6 @@ mongoose.connect(URI, {
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
 
-app.get('/',(req,res)=>{
-    res.send({
-        activeStatus:true,
-        error:false,
-    })
-})
 
 
 // Start server
